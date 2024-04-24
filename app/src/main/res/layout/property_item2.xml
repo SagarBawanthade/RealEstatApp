@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:id="@+id/card_view_favourite"
+    android:elevation="4dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:id="@+id/properties_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Property Image -->
+        <ImageView
+            android:id="@+id/propertyImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            />
+
+        <!-- Property Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Property Title with Sell TextView -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Property Title -->
+
+                <!-- "Sell" TextView -->
+                <TextView
+                    android:id="@+id/propertyTitleTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Property Title"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rent_sellTextView"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+
+                    android:gravity="center"
+                    android:text="Sell"
+                    android:textSize="14sp"
+                    android:background="@drawable/favsell"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="363dp"
+                android:layout_height="32dp"
+                android:orientation="horizontal">
+
+                <!-- Property Title -->
+
+                <!-- "Sell" TextView -->
+                <TextView
+                    android:id="@+id/locationTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="Location"
+                    android:textSize="16sp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+            <!-- Property Price -->
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/locationTextView"
+                android:text="Price"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/remove_fav_button"
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/locationTextView"
+                android:text="Remove from favorites"
+                android:textColor="#AC0C00"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Additional Property Details (e.g., bedrooms, bathrooms, etc.) -->
+            <!-- You can add more TextViews here as needed -->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
