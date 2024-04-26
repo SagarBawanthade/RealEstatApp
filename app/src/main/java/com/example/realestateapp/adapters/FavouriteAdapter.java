@@ -31,6 +31,9 @@ public class FavouriteAdapter  extends RecyclerView.Adapter<FavouriteAdapter.Vie
     public FavouriteAdapter(Context context, List<FavouriteProperty> favouriteList) {
         this.context = context;
         this.favouriteList = favouriteList;
+
+
+        firestore = FirebaseFirestore.getInstance();
     }
 
 

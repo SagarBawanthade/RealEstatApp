@@ -23,8 +23,8 @@ public class ListingAdapter extends RecyclerView.Adapter<ListingAdapter.ViewHold
     private Context context;
     private List<Item2> item2List;
 
-    public ListingAdapter(List<Item2> item2List ) {
-
+    public ListingAdapter(List<Item2> item2List , Context context) {
+        this.context = context;
         this.item2List = item2List;
 
     }

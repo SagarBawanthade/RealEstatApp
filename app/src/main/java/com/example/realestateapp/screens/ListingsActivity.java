@@ -41,7 +41,7 @@ public class ListingsActivity extends AppCompatActivity {
         // Initialize RecyclerView and Adapter
         recyclerView = findViewById(R.id.listing_recycler);
         item2List = new ArrayList<>();
-        adapter = new ListingAdapter(item2List);
+        adapter = new ListingAdapter(item2List,this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
         backButton = findViewById(R.id.back_button2);

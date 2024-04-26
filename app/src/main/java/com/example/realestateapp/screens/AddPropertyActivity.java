@@ -32,7 +32,7 @@ public class AddPropertyActivity extends AppCompatActivity {
     private static final int PICK_IMAGE_REQUEST = 1;
 
     private EditText locationEditText, typeEditText, descriptionEditText, shortDescriptionEditText,
-            ownerNameEditText, contactNoEditText, priceEditText;
+            ownerNameEditText, contactNoEditText, priceEditText,  categoryEditText;
     private ImageView imageViewUploaded;
     private Button buttonUploadImage, buttonSubmit;
 
@@ -55,7 +55,7 @@ public class AddPropertyActivity extends AppCompatActivity {
         ownerNameEditText = findViewById(R.id.property_ownername);
         contactNoEditText = findViewById(R.id.property_contactno);
         priceEditText = findViewById(R.id.property_price);
-
+        categoryEditText = findViewById(R.id.property_category);
         imageViewUploaded = findViewById(R.id.imageViewUploaded);
         buttonUploadImage = findViewById(R.id.buttonUploadImage);
         buttonSubmit = findViewById(R.id.buttonSubmit);
@@ -94,6 +94,7 @@ public class AddPropertyActivity extends AppCompatActivity {
                 String contactNo = contactNoEditText.getText().toString();
                 String price = priceEditText.getText().toString();
                 String imageuri = imageViewUploaded.toString();
+                String category = categoryEditText.getText().toString();
 
                 // Create a Map to store the property data
                 Map<String, Object> propertyData = new HashMap<>();
@@ -105,6 +106,7 @@ public class AddPropertyActivity extends AppCompatActivity {
                 propertyData.put("contactno", contactNo);
                 propertyData.put("price", price);
                 propertyData.put("imageuri", imageuri);
+                propertyData.put("category", category);
 
                 /* Add data to Firestore
                 db.collection("Properties")

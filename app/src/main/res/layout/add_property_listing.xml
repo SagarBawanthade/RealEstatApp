@@ -118,6 +118,17 @@
                 android:hint="Enter Price"
                 android:inputType="text" />
 
+            <EditText
+                android:id="@+id/property_category"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/property_price"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/edit_bg"
+                android:gravity="center"
+                android:hint="Enter Category. Ex:- Home, Villas,Flats"
+                android:inputType="text" />
+
 
             <!-- Add EditTexts for other property details -->
 
@@ -125,7 +136,7 @@
                 android:id="@+id/imageViewUploaded"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_below="@id/property_price"
+                android:layout_below="@id/property_category"
                 android:layout_marginTop="10dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/hom1"/>

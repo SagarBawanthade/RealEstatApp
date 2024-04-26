@@ -35,22 +35,22 @@
 
         />
 
-    <TextView
-        android:id="@+id/user_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toStartOf="@+id/profile_image"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="32dp"
-        android:text="User Name"
-        android:textColor="@color/black"
-        android:textSize="31dp"
-        android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="-6dp"
+                android:layout_toStartOf="@+id/profile_image"
+                android:text="User Name"
+                android:textColor="@color/black"
+                android:textSize="31dp"
+                android:textStyle="bold" />
 
-    <LinearLayout
+            <LinearLayout
         android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
                     android:layout_below="@+id/linear_category"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
-                    android:text="Featured Properties..."
+                    android:text="Categories for you..."
                     android:textSize="25sp"
                     android:textStyle="bold" />
 
@@ -250,7 +250,7 @@
                 android:layout_below="@+id/top_deal_RV1"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="14dp"
-                android:text="Top deals for you"
+                android:text="Best deals for you"
                 android:textSize="28sp"
                 android:textStyle="bold" />
 
