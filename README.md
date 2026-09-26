@@ -6,6 +6,8 @@ This is a Real Estate Application built using Android Studio and Firebase. The a
 (MOBILE APP)
 ![Real Estate App Demo](/images/demo.gif)
 
+
+
 ## Features
 
 - **User Authentication**: Users can sign up, log in, and log out securely using Firebase Authentication.
